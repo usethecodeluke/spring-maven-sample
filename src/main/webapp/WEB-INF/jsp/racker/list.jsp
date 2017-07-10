@@ -6,14 +6,15 @@
 	
 	<c:forEach items="${rackerList}" var="racker">
 		<h3>
-			${racker.name}: $${racker.price}
+			${racker.name}: ${racker.title}
 		</h3>
 		<strong>Strengths</strong>
 		<ul>
-			<c:forEach items="{racker.strengths}" var="strength">
+			<c:forEach items="${racker.strengths}" var="strength">
 			<li>${strength}</li>
 			</c:forEach>
 		</ul>
+		<hr/>
 	</c:forEach>
 
 </body>

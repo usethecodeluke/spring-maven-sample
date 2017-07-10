@@ -1,5 +1,8 @@
 package com.rackspace.jwood.domain;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class Racker {
@@ -9,7 +12,7 @@ public class Racker {
 	@NotEmpty
 	private String title;
 
-	private ArrayList strengths;
+	private List<String> strengths = new LinkedList<String>();
 	
 	public String getName() {
 		return name;
@@ -23,7 +26,7 @@ public class Racker {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public ArrayList getStrengths() {
+	public List<String> getStrengths() {
 		return strengths;
 	}
 	public void addStrength(String strength) {
