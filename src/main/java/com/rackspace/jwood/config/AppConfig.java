@@ -1,4 +1,4 @@
-package com.jeromejaglale.config;
+package com.rackspace.jwood.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"com.jeromejaglale.service", "com.jeromejaglale.controller"})
+@ComponentScan(basePackages = {"com.rackspace.jwood.service", "com.rackspace.jwood.controller"})
 public class AppConfig {
 	@Bean
     public ViewResolver jspViewResolver() {

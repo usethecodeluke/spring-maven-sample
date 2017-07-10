@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>springwebapp</name>
-	<comment></comment>
+	<comment>A simple spring based web app to demonstrate using docker to build and deploy java apps.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
