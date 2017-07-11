@@ -1,0 +1,12 @@
+qr-maker:
+  image: demo/qr-maker
+  container_name: qr-maker
+  ports:
+   - "8088:8080"
+spring-maven-demo:
+  image: demo/rackerapp
+  container_name: rackerapp
+  ports:
+  - "8080:8080"
+  links:
+  - qr-maker:qr-maker

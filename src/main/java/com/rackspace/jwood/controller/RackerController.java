@@ -42,4 +42,18 @@ public class RackerController {
 		return "redirect:/racker/list";
 			
 	}
+
+	@RequestMapping(value="/racker/list", method=RequestMethod.POST)
+	public String rackerStrengthSubmit(String strength,
+									Integer rackerId, BindingResult result) {
+		if(result.hasErrors()) {
+			// show the form again, with the errors
+			return "racker/list";
+		}
+	
+		// validation was successful
+		rackerService.addStrength(rackerId, strength);
+		return "redirect:/racker/list";
+			
+	}
 }
