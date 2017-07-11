@@ -2,17 +2,22 @@
 
 Commands for docker demo:
 
-git clone git@github.com:usethecodeluke/spring-maven-sample.git
+Please FORK this repo:
+https://github.com/usethecodeluke/spring-maven-sample
 
-cd spring-maven-sample/maven
+If you dont have a github account, clone instead:
 
-docker build -f maven.Dockerfile -t demo/maven:alpine-8 .
+`# git clone https://github.com/usethecodeluke/spring-maven-sample.git`
 
-cd ..
+`# cd spring-maven-sample/maven`
 
-docker run -it --rm -v "$PWD":/app -w /app demo/maven:alpine-8 mvn clean install
+`# docker build -f maven.Dockerfile -t demo/maven:alpine-8 .`
 
-docker build -f Dockerfile -t demo/rackerapp .
+`# cd ..`
 
-docker run --rm -p 8080:8080 demo/rackerapp
+`# docker run -it --rm -v "$PWD":/app -w /app demo/maven:alpine-8 mvn clean install`
+
+`# docker build -f Dockerfile -t demo/rackerapp .`
+
+`# docker run --rm -p 8080:8080 demo/rackerapp`
 
