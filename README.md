@@ -21,3 +21,4 @@ If you dont have a github account, clone instead:
 
 `# docker run --rm -p 8080:8080 demo/rackerapp`
 
+Visit: (http://127.0.0.1:8080/springwebapp/racker/add)
